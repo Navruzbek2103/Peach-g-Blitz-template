@@ -1,0 +1,90 @@
+.agents {
+    background: #EEF3FA;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        width: 100%;
+        &__left {
+            width: 50%;
+            &__title {
+                font-size: 35px;
+                line-height: 48px;
+                color: #000000;
+                width: 400px;
+            }
+            &__name {
+                font-size: 25px;
+                line-height: 33px;
+                color: #000000;
+            }
+            &__description {
+                font-size: 22px;
+                line-height: 33px;
+                color: #000000;
+            }
+            &__button {
+                background: #2A94E2;
+                border-radius: 5px;
+                font-size: 20px;
+                line-height: 30px;
+                color: #FFFFFF;
+                border: none;
+                padding: 10px 40px;
+                &:active {
+                    box-shadow: 0 0 0 3px #41a3e8;
+                }
+            }
+        }
+        &__right {
+            width: 48%;
+            height: 100%;
+            &>img {
+                // width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 975px) {
+    .agents {
+        &__block {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__left {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &__title {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 20px;
+                    line-height: 38px;
+                    width: 400px;
+                }
+                &__name {
+                    font-size: 15px;
+                    line-height: 23px;
+                }
+                &__description {
+                    width: 80%;
+                    font-size: 12px;
+                    line-height: 23px;
+                }
+            }
+            &__right {
+                margin-top: 30px;
+                width: 70%;
+                height: 100%;
+                &>img {
+                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
