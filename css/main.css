@@ -535,4 +535,20 @@ header h2.header__title {
     height: 100%;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .agents {
+    overflow-x: hidden;
+  }
+  .agents__block__left__title {
+    font-size: 12px;
+  }
+  .agents__block__left__title__name {
+    font-size: 10px;
+  }
+  .agents__block__left__title__description {
+    font-size: 8px;
+    line-height: 10px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

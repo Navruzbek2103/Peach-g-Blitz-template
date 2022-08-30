@@ -88,3 +88,23 @@
         }
     }
 }
+
+@media only screen and(max-width: 500px) {
+    .agents {
+        overflow-x: hidden;
+        &__block {
+            &__left {
+                &__title {
+                    font-size: 12px;
+                    &__name {
+                        font-size: 10px;
+                    }
+                    &__description {
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
